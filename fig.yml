@@ -7,9 +7,11 @@
 app:
   build: .
   links:
-    - db:db
+   - db:db
   ports:
-    - 5000:5000
+   - 5000:5000
+  volumes:
+   - .:/lets-chat
 
 # Mongo Database
 db:
